@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o"
+  "CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o.d"
   "CMakeFiles/FusionPlay.dir/src/main.cpp.o"
   "CMakeFiles/FusionPlay.dir/src/main.cpp.o.d"
-  "CMakeFiles/FusionPlay.dir/src/menu.cpp.o"
-  "CMakeFiles/FusionPlay.dir/src/menu.cpp.o.d"
-  "CMakeFiles/FusionPlay.dir/src/renderer.cpp.o"
-  "CMakeFiles/FusionPlay.dir/src/renderer.cpp.o.d"
   "FusionPlay"
   "FusionPlay.pdb"
 )

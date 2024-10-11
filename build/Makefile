@@ -129,6 +129,30 @@ FusionPlay/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/build
 .PHONY : FusionPlay/fast
 
+src/lua_manager.o: src/lua_manager.cpp.o
+.PHONY : src/lua_manager.o
+
+# target to build an object file
+src/lua_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o
+.PHONY : src/lua_manager.cpp.o
+
+src/lua_manager.i: src/lua_manager.cpp.i
+.PHONY : src/lua_manager.i
+
+# target to preprocess a source file
+src/lua_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.i
+.PHONY : src/lua_manager.cpp.i
+
+src/lua_manager.s: src/lua_manager.cpp.s
+.PHONY : src/lua_manager.s
+
+# target to generate assembly for a file
+src/lua_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.s
+.PHONY : src/lua_manager.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,54 +177,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/menu.o: src/menu.cpp.o
-.PHONY : src/menu.o
-
-# target to build an object file
-src/menu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/menu.cpp.o
-.PHONY : src/menu.cpp.o
-
-src/menu.i: src/menu.cpp.i
-.PHONY : src/menu.i
-
-# target to preprocess a source file
-src/menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/menu.cpp.i
-.PHONY : src/menu.cpp.i
-
-src/menu.s: src/menu.cpp.s
-.PHONY : src/menu.s
-
-# target to generate assembly for a file
-src/menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/menu.cpp.s
-.PHONY : src/menu.cpp.s
-
-src/renderer.o: src/renderer.cpp.o
-.PHONY : src/renderer.o
-
-# target to build an object file
-src/renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/renderer.cpp.o
-.PHONY : src/renderer.cpp.o
-
-src/renderer.i: src/renderer.cpp.i
-.PHONY : src/renderer.i
-
-# target to preprocess a source file
-src/renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/renderer.cpp.i
-.PHONY : src/renderer.cpp.i
-
-src/renderer.s: src/renderer.cpp.s
-.PHONY : src/renderer.s
-
-# target to generate assembly for a file
-src/renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/src/renderer.cpp.s
-.PHONY : src/renderer.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,15 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... FusionPlay"
+	@echo "... src/lua_manager.o"
+	@echo "... src/lua_manager.i"
+	@echo "... src/lua_manager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/menu.o"
-	@echo "... src/menu.i"
-	@echo "... src/menu.s"
-	@echo "... src/renderer.o"
-	@echo "... src/renderer.i"
-	@echo "... src/renderer.s"
 .PHONY : help
 
 

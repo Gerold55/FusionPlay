@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/lua5.3 -I/home/pi/projects/FusionPlay/src -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/usr/include/lua5.3 -isystem /usr/include/SDL2
 
-CXX_FLAGS = -g
+CXX_FLAGS = -std=gnu++11
 

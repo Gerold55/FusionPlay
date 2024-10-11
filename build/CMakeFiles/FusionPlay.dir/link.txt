@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/FusionPlay.dir/src/main.cpp.o CMakeFiles/FusionPlay.dir/src/renderer.cpp.o CMakeFiles/FusionPlay.dir/src/menu.cpp.o -o FusionPlay  /usr/lib/aarch64-linux-gnu/libSDL2.so /usr/lib/aarch64-linux-gnu/liblua5.3.so /usr/lib/aarch64-linux-gnu/libm.so 
+/usr/bin/c++ CMakeFiles/FusionPlay.dir/src/main.cpp.o CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o -o FusionPlay  /usr/lib/aarch64-linux-gnu/libSDL2.so /usr/lib/aarch64-linux-gnu/libGLEW.so /usr/lib/aarch64-linux-gnu/libGL.so /usr/lib/aarch64-linux-gnu/liblua5.3.so /usr/lib/aarch64-linux-gnu/libm.so 

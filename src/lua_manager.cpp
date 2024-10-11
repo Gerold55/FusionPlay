@@ -1,45 +1,69 @@
-#include <lua.hpp>
+#include "lua_manager.h"
 #include <iostream>
 
-class LuaManager {
-public:
-    LuaManager() {
-        L = luaL_newstate();
-        luaL_openlibs(L);
+LuaManager::LuaManager() {
+    L = luaL_newstate();
+    luaL_openlibs(L);
+}
+
+LuaManager::~LuaManager() {
+    lua_close(L);
+}
+
+void LuaManager::initialize() {
+    registerFunctions(); // Register functions before executing scripts
+}
+
+void LuaManager::executeScript(const char* scriptPath) {
+    if (luaL_dofile(L, scriptPath) != LUA_OK) {
+        std::cerr << "Error executing Lua script: " << lua_tostring(L, -1) << std::endl;
+        lua_pop(L, 1); // Pop the error message
+    }
+}
+
+// Function to render the cube using OpenGL
+void LuaManager::renderCube() {
+    // Your existing OpenGL cube rendering logic here
+    GLfloat vertices[] = {
+        -0.5f, -0.5f, -0.5f,  0.5f, -0.5f, -0.5f,  0.5f,  0.5f, -0.5f,
+         0.5f,  0.5f, -0.5f, -0.5f,  0.5f, -0.5f, -0.5f, -0.5f, -0.5f,
+        // Other cube vertices...
+    };
+
+    static GLuint VBO, VAO;
+    static bool initialized = false;
+    if (!initialized) {
+        glGenVertexArrays(1, &VAO);
+        glGenBuffers(1, &VBO);
+        glBindVertexArray(VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+        glEnableVertexAttribArray(0);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+        glBindVertexArray(0);
+        initialized = true;
     }
 
-    ~LuaManager() {
-        lua_close(L);
-    }
+    // Use shader program (assume you have shader program initialized)
+    GLuint shaderProgram; // Assume this variable is initialized correctly.
+    glUseProgram(shaderProgram);
 
-    void loadScript(const std::string& script) {
-        if (luaL_dofile(L, script.c_str()) != LUA_OK) {
-            std::cerr << "Error loading script: " << lua_tostring(L, -1) << std::endl;
-            lua_pop(L, 1);  // Remove error message
-        }
-    }
+    // Draw the cube
+    glBindVertexArray(VAO);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+    glBindVertexArray(0);
+}
 
-    void callUpdate() {
-        lua_getglobal(L, "update");
-        if (lua_pcall(L, 0, 0, 0) != LUA_OK) {
-            std::cerr << "Error calling update: " << lua_tostring(L, -1) << std::endl;
-            lua_pop(L, 1);  // Remove error message
-        }
-    }
+// Function to bind the renderCube to Lua
+int lua_renderCube(lua_State* L) {
+    LuaManager* luaManager = reinterpret_cast<LuaManager*>(lua_touserdata(L, lua_upvalueindex(1)));
+    luaManager->renderCube();
+    return 0; // No return value
+}
 
-private:
-    lua_State* L;
-};
-
-// In your main loop, you would do something like this
-LuaManager luaManager;
-luaManager.loadScript("games/Game1/cube.lua");
-
-// Inside your main game loop
-while (running) {
-    // Handle events...
-
-    luaManager.callUpdate(); // Call the update function from the Lua script
-
-    // Swap buffers...
+void LuaManager::registerFunctions() {
+    lua_pushlightuserdata(L, this); // Push the LuaManager instance to Lua
+    lua_pushcclosure(L, lua_renderCube, 1); // Create a closure to bind renderCube
+    lua_setglobal(L, "renderCube"); // Register the function globally
 }

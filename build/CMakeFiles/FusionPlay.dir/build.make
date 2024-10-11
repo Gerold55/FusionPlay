@@ -83,52 +83,38 @@ CMakeFiles/FusionPlay.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FusionPlay.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/projects/FusionPlay/src/main.cpp -o CMakeFiles/FusionPlay.dir/src/main.cpp.s
 
-CMakeFiles/FusionPlay.dir/src/renderer.cpp.o: CMakeFiles/FusionPlay.dir/flags.make
-CMakeFiles/FusionPlay.dir/src/renderer.cpp.o: /home/pi/projects/FusionPlay/src/renderer.cpp
-CMakeFiles/FusionPlay.dir/src/renderer.cpp.o: CMakeFiles/FusionPlay.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FusionPlay.dir/src/renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FusionPlay.dir/src/renderer.cpp.o -MF CMakeFiles/FusionPlay.dir/src/renderer.cpp.o.d -o CMakeFiles/FusionPlay.dir/src/renderer.cpp.o -c /home/pi/projects/FusionPlay/src/renderer.cpp
+CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o: CMakeFiles/FusionPlay.dir/flags.make
+CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o: /home/pi/projects/FusionPlay/src/lua_manager.cpp
+CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o: CMakeFiles/FusionPlay.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o -MF CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o.d -o CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o -c /home/pi/projects/FusionPlay/src/lua_manager.cpp
 
-CMakeFiles/FusionPlay.dir/src/renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FusionPlay.dir/src/renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/projects/FusionPlay/src/renderer.cpp > CMakeFiles/FusionPlay.dir/src/renderer.cpp.i
+CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/projects/FusionPlay/src/lua_manager.cpp > CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.i
 
-CMakeFiles/FusionPlay.dir/src/renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FusionPlay.dir/src/renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/projects/FusionPlay/src/renderer.cpp -o CMakeFiles/FusionPlay.dir/src/renderer.cpp.s
-
-CMakeFiles/FusionPlay.dir/src/menu.cpp.o: CMakeFiles/FusionPlay.dir/flags.make
-CMakeFiles/FusionPlay.dir/src/menu.cpp.o: /home/pi/projects/FusionPlay/src/menu.cpp
-CMakeFiles/FusionPlay.dir/src/menu.cpp.o: CMakeFiles/FusionPlay.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FusionPlay.dir/src/menu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FusionPlay.dir/src/menu.cpp.o -MF CMakeFiles/FusionPlay.dir/src/menu.cpp.o.d -o CMakeFiles/FusionPlay.dir/src/menu.cpp.o -c /home/pi/projects/FusionPlay/src/menu.cpp
-
-CMakeFiles/FusionPlay.dir/src/menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FusionPlay.dir/src/menu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/projects/FusionPlay/src/menu.cpp > CMakeFiles/FusionPlay.dir/src/menu.cpp.i
-
-CMakeFiles/FusionPlay.dir/src/menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FusionPlay.dir/src/menu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/projects/FusionPlay/src/menu.cpp -o CMakeFiles/FusionPlay.dir/src/menu.cpp.s
+CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/projects/FusionPlay/src/lua_manager.cpp -o CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.s
 
 # Object files for target FusionPlay
 FusionPlay_OBJECTS = \
 "CMakeFiles/FusionPlay.dir/src/main.cpp.o" \
-"CMakeFiles/FusionPlay.dir/src/renderer.cpp.o" \
-"CMakeFiles/FusionPlay.dir/src/menu.cpp.o"
+"CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o"
 
 # External object files for target FusionPlay
 FusionPlay_EXTERNAL_OBJECTS =
 
 FusionPlay: CMakeFiles/FusionPlay.dir/src/main.cpp.o
-FusionPlay: CMakeFiles/FusionPlay.dir/src/renderer.cpp.o
-FusionPlay: CMakeFiles/FusionPlay.dir/src/menu.cpp.o
+FusionPlay: CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o
 FusionPlay: CMakeFiles/FusionPlay.dir/build.make
 FusionPlay: /usr/lib/aarch64-linux-gnu/libSDL2.so
+FusionPlay: /usr/lib/aarch64-linux-gnu/libGLEW.so
+FusionPlay: /usr/lib/aarch64-linux-gnu/libGL.so
 FusionPlay: /usr/lib/aarch64-linux-gnu/liblua5.3.so
 FusionPlay: /usr/lib/aarch64-linux-gnu/libm.so
 FusionPlay: CMakeFiles/FusionPlay.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable FusionPlay"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable FusionPlay"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FusionPlay.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

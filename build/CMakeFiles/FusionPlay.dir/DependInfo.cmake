@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pi/projects/FusionPlay/src/lua_manager.cpp" "CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o" "gcc" "CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o.d"
   "/home/pi/projects/FusionPlay/src/main.cpp" "CMakeFiles/FusionPlay.dir/src/main.cpp.o" "gcc" "CMakeFiles/FusionPlay.dir/src/main.cpp.o.d"
-  "/home/pi/projects/FusionPlay/src/menu.cpp" "CMakeFiles/FusionPlay.dir/src/menu.cpp.o" "gcc" "CMakeFiles/FusionPlay.dir/src/menu.cpp.o.d"
-  "/home/pi/projects/FusionPlay/src/renderer.cpp" "CMakeFiles/FusionPlay.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/FusionPlay.dir/src/renderer.cpp.o.d"
   )
 
 # Targets to which this target links.

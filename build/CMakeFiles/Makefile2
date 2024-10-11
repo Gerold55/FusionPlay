@@ -81,12 +81,12 @@ clean: CMakeFiles/FusionPlay.dir/clean
 CMakeFiles/FusionPlay.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FusionPlay.dir/build.make CMakeFiles/FusionPlay.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=1,2,3,4 "Built target FusionPlay"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/projects/FusionPlay/build/CMakeFiles --progress-num=1,2,3 "Built target FusionPlay"
 .PHONY : CMakeFiles/FusionPlay.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FusionPlay.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/FusionPlay/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/FusionPlay/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FusionPlay.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/projects/FusionPlay/build/CMakeFiles 0
 .PHONY : CMakeFiles/FusionPlay.dir/rule

@@ -1,22 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 project(FusionPlay)
 
-# Find the SDL2 package
+set(CMAKE_CXX_STANDARD 11)
+
+find_package(OpenGL REQUIRED)
 find_package(SDL2 REQUIRED)
+find_package(GLEW REQUIRED)
+
+# Find the Lua library
 find_package(Lua REQUIRED)
+include_directories(${LUA_INCLUDE_DIR})
 
-include_directories(${SDL2_INCLUDE_DIRS} ${LUA_INCLUDE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src)
+include_directories(${SDL2_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS} ${LUA_INCLUDE_DIR})
 
-# Add source files
-set(SOURCES
-    src/main.cpp
-    src/renderer.cpp
-    src/menu.cpp
-    # Add other source files here
-)
+add_executable(FusionPlay src/main.cpp src/lua_manager.cpp)
 
-# Create the executable
-add_executable(FusionPlay ${SOURCES})
-
-# Link libraries
-target_link_libraries(FusionPlay ${SDL2_LIBRARIES} ${LUA_LIBRARIES})
+# Link against the required libraries
+target_link_libraries(FusionPlay ${SDL2_LIBRARIES} ${GLEW_LIBRARIES} OpenGL::GL ${LUA_LIBRARIES})

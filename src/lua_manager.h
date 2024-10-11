@@ -1,17 +1,21 @@
-// lua_manager.h
 #ifndef LUA_MANAGER_H
 #define LUA_MANAGER_H
 
 #include <lua.hpp>
-#include <string>
+#include <GL/glew.h>
 
 class LuaManager {
 public:
     LuaManager();
     ~LuaManager();
 
-    bool loadScript(const std::string& scriptPath);
-    void executeScript();
+    void initialize();
+    void executeScript(const char* scriptPath);
+    void registerFunctions();
+    void renderCube();
+
+    // Public getter for lua_State
+    lua_State* getLuaState() { return L; }
 
 private:
     lua_State* L;

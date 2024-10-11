@@ -1,4 +1,4 @@
-// Graphics.h
+// graphics.h
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 
@@ -8,13 +8,13 @@
 class Graphics {
 public:
     Graphics(SDL_Renderer* renderer);
-    ~Graphics();
-    
-    SDL_Texture* loadTexture(const std::string& filePath);
-    void draw(SDL_Texture* texture, int x, int y, int width, int height);
-    
+    void clear();
+    void present();
+    void drawCube(float x, float y, float z, float size);
+    // Add more drawing functions as needed
+
 private:
-    SDL_Renderer* renderer;
+    SDL_Renderer* mRenderer;
 };
 
 #endif // GRAPHICS_H

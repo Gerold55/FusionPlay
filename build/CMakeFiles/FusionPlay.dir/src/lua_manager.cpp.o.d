@@ -1,8 +1,15 @@
-CMakeFiles/FusionPlay.dir/src/engine.cpp.o: \
- /home/pi/projects/FusionPlay/src/engine.cpp /usr/include/stdc-predef.h \
- /home/pi/projects/FusionPlay/src/engine.h /usr/include/c++/12/iostream \
- /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
- /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
+CMakeFiles/FusionPlay.dir/src/lua_manager.cpp.o: \
+ /home/pi/projects/FusionPlay/src/lua_manager.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pi/projects/FusionPlay/src/lua_manager.h \
+ /usr/include/lua5.3/lua.hpp /usr/include/lua5.3/lua.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/stdarg.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/stddef.h \
+ /usr/include/lua5.3/luaconf.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
+ /usr/include/limits.h \
+ /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
  /usr/include/aarch64-linux-gnu/bits/timesize.h \
@@ -10,22 +17,44 @@ CMakeFiles/FusionPlay.dir/src/engine.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/long-double.h \
  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+ /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
+ /usr/include/aarch64-linux-gnu/lua5.3-deb-multiarch.h \
+ /usr/include/lua5.3/lualib.h /usr/include/lua5.3/lauxlib.h \
+ /usr/include/stdio.h /usr/include/aarch64-linux-gnu/bits/types.h \
+ /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+ /usr/include/aarch64-linux-gnu/bits/time64.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+ /usr/include/GL/glew.h /usr/include/c++/12/cstddef \
+ /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
+ /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/cpu_defines.h \
+ /usr/include/c++/12/cstdint \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
+ /usr/include/aarch64-linux-gnu/bits/wchar.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h /usr/include/GL/glu.h \
+ /usr/include/GL/gl.h /usr/include/c++/12/iostream \
  /usr/include/c++/12/ostream /usr/include/c++/12/ios \
  /usr/include/c++/12/iosfwd /usr/include/c++/12/bits/stringfwd.h \
  /usr/include/c++/12/bits/memoryfwd.h /usr/include/c++/12/bits/postypes.h \
  /usr/include/c++/12/cwchar /usr/include/wchar.h \
- /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
- /usr/include/aarch64-linux-gnu/bits/floatn.h \
- /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/stddef.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/stdarg.h \
- /usr/include/aarch64-linux-gnu/bits/wchar.h \
  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/c++/12/exception /usr/include/c++/12/bits/exception.h \
@@ -36,13 +65,7 @@ CMakeFiles/FusionPlay.dir/src/engine.cpp.o: \
  /usr/include/c++/12/new /usr/include/c++/12/bits/move.h \
  /usr/include/c++/12/type_traits \
  /usr/include/c++/12/bits/nested_exception.h \
- /usr/include/c++/12/bits/char_traits.h /usr/include/c++/12/cstdint \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
- /usr/include/aarch64-linux-gnu/bits/types.h \
- /usr/include/aarch64-linux-gnu/bits/typesizes.h \
- /usr/include/aarch64-linux-gnu/bits/time64.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/12/bits/char_traits.h \
  /usr/include/c++/12/bits/localefwd.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++locale.h \
  /usr/include/c++/12/clocale /usr/include/locale.h \
@@ -75,7 +98,6 @@ CMakeFiles/FusionPlay.dir/src/engine.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/atomic_word.h \
  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/12/bits/locale_classes.h /usr/include/c++/12/string \
@@ -118,12 +140,6 @@ CMakeFiles/FusionPlay.dir/src/engine.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/cstdio \
- /usr/include/stdio.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/12/cerrno /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
