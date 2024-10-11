@@ -1,0 +1,3 @@
+/home/pi/projects/FusionPlay/build/CMakeFiles/FusionPlay.dir
+/home/pi/projects/FusionPlay/build/CMakeFiles/edit_cache.dir
+/home/pi/projects/FusionPlay/build/CMakeFiles/rebuild_cache.dir
